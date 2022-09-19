@@ -1,0 +1,104 @@
+*{
+    /*limpeza de configurações automáticas do navegador*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* o *{} siginifica que a regra vale para todo o site */
+
+body{
+    background-image: url(./bg.png);
+    background-size: 100% auto;    /*o primeiro size é largura e o segundo é altura*/
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    
+}
+body*{
+    font-family: 'inter', sans-serif;
+    /*primeira opção de fonte vinda do fonts google*/
+    /*segunda opção de fonte vinda do padrão html/css*/
+    line-height: 160%;
+}
+header img{
+    width: 180px;
+    border-radius: 50%;
+}
+header{
+    margin:auto;/*alinhou a imagem de header ao centro*/;
+    padding: 5px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100% );
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    transition: transform .3s;
+    /*toda vez que houver uma transformação nessa div, será de forma lenta, uma transição de 3seg*/
+}
+header:hover{
+    transform: scale(1.1);
+    /*quando o mouse passar por cima da div, ela irá aumentar de forma escalada 1.1x*/
+}
+main{
+    max-width: 90%;
+    max-height: 25%;
+    margin: auto;    /*a margem automática faz com que as laterais fiquem com o mesmo tamanho*/
+    display: grid; /*torna possível o uso de gap*/
+    gap: 50px; /*espaço entre as sections de main*/
+    margin-top: 40px;
+}
+ul{
+    list-style: none;    /*tira o tópico que vem na lista, pontinhos ou numeros*/
+}
+section{
+    color:white;    /*isso troca a cor de tudo dentro dessa tag exceto por background e images*/
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100% );
+    /*as porcentagens são onde começam e onde terminam as cores*/
+    /*o linear gradiente é para fazer fundos em degradê, e se você colocar box sobre box igual em div sobre
+    section, é possível montar sua borda colorida em degradê*/
+    padding-top: 4px; /*É a margem interna do topo de section, a div só vai começar abaixo dessa margem, ou seja,
+    vai ser uma linha onde aparece o degradê de margem*/
+    border-radius: 10px;
+    
+}
+section h2{
+    font-weight: 900;    /*grossura da letra*/
+    font-size: 30px;    /*tamanho da letra*/
+    letter-spacing: 2px;    /*espaçamento entre letras*/
+}
+section p{
+    color: #a1a1aa;
+    font-size: 20px;
+    font-style: italic;
+}
+section ul{
+    margin-top: 15px; /*margem entre lista e o conteúdo acima*/
+}
+section div{
+    background-color: rgb(26, 92, 97);
+    padding: 40px; /*margem interna, 4 lados*/
+    padding-top: 25px;
+    border-radius: 8px;
+}
+section ul li{
+    transition: transform .3s;
+    /*toda vez que houver uma transformação nessa div, será de forma lenta, uma transição de 3seg*/
+}
+section ul li:hover{
+    transform: scale(1.1);
+    /*quando o mouse passar por cima da div, ela irá aumentar de forma escalada 1.1x*/
+}
+ul{
+    display: flex; /*faz os tópicos da lista ficarem lado a lado*/
+}
+.games-list img{
+    width:70%;
+    border-radius: 8px; /*borda arredondada*/
+}
+.streaming-list img{
+    width: 70%;
+    border-radius: 60%;
+}
+.social-list img{
+    border-left: 100;
+    border-right: 100;
+}
