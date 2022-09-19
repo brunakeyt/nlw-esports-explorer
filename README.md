@@ -5,7 +5,7 @@
 
 Projeto construído no Evento Next Level Week da RocketSeat
 
-[Clique aqui para acessar](https://brunakeyt.github.io/NLW/)
+[Clique aqui para acessar](https://brunakeyt.github.io/nlw-esports-explorer/)
 
 ## 🛠 Tecnologias
 - HTML
