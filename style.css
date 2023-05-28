@@ -64,11 +64,13 @@ section h2{
     font-weight: 900;    /*grossura da letra*/
     font-size: 30px;    /*tamanho da letra*/
     letter-spacing: 2px;    /*espaçamento entre letras*/
+    text-align: center;
 }
 section p{
     color: #a1a1aa;
     font-size: 20px;
     font-style: italic;
+    text-align: center;
 }
 section ul{
     margin-top: 15px; /*margem entre lista e o conteúdo acima*/
@@ -85,14 +87,13 @@ section ul li{
 }
 section ul li:hover{
     transform: scale(1.1);
-    /*quando o mouse passar por cima da div, ela irá aumentar de forma escalada 1.1x*/
 }
 ul{
-    display: flex; /*faz os tópicos da lista ficarem lado a lado*/
+    display: flex;
 }
 .games-list img{
     width:70%;
-    border-radius: 8px; /*borda arredondada*/
+    border-radius: 8px;
 }
 .streaming-list img{
     width: 70%;
@@ -101,4 +102,10 @@ ul{
 .social-list img{
     border-left: 100;
     border-right: 100;
+}
+.social-list, .streaming-list, .games-list {
+    -ms-flex-align: center;
+}
+.social-list li, .streaming-list li, .games-list li {
+    margin: 15px;
 }
